@@ -1,0 +1,76 @@
+:root {
+    --bg-black: #030712;
+    --bg-slate: #0b0f19;
+    --bg-indigo: #0f1026;
+    --bg-charcoal: #161824;
+    
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-violet: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    
+    /* Compatibility variables */
+    --black: #030712;
+    --light: #f8fafc;
+    --salmon: #8b5cf6;
+}
+
+
+body {
+    transition: background-color ease-out 0.5s;
+}
+
+*::selection {
+    background-color: var(--accent-violet);
+    color: #fff;
+}
+
+
+body[theme="black"] {
+    background-color: var(--bg-black);
+    
+}
+
+body[theme="black"] .section {
+    color: var(--text-light);
+}
+body[theme="white"] {
+    background-color: var(--bg-slate);
+    
+}
+
+body[theme="white"] .section {
+    color: var(--text-light);
+}
+
+body[theme="cyan"] {
+    background-color: var(--bg-indigo);
+    
+}
+
+body[theme="cyan"] .section {
+    color: var(--text-light);
+}
+
+body[theme="salmon"] {
+    background-color: var(--bg-charcoal);  
+}
+
+body[theme="salmon"] .section {
+    color: var(--text-light);
+}
+
+@font-face {
+    font-family: 'Sansita';
+    src: url('./assets/fonts/font1.ttf');
+}
+
+@font-face {
+    font-family: 'SansitaReg';
+    src: url('./assets/fonts/font2.ttf');
+}
+
+@font-face {
+    font-family: 'SansitaBold';
+    src: url('./assets/fonts/font3.ttf');
+}
