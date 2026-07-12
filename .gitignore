@@ -15,6 +15,9 @@ dist-ssr
 # Next.js
 .next/
 
+# Git internals
+.git-rewrite/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
